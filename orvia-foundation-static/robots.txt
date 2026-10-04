@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://foundation.orvia.org.uk/sitemap.xml
