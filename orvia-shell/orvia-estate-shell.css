@@ -1,0 +1,53 @@
+/* ORVIA estate shared shell (static sites): header + Follow ORVIA + footer. Mirrors orvia.org.uk. */
+.oes-header,.oes-footer{font-family:Inter,"Plus Jakarta Sans",system-ui,Arial,sans-serif;color:#0A1B33;--oes-a:var(--oes-accent,#1F4FE0)}
+.oes-header *,.oes-footer *{box-sizing:border-box}
+.oes-shell{width:min(1360px,calc(100% - 48px));margin:0 auto}
+.oes-header{position:sticky;top:0;z-index:1000;background:rgba(250,248,244,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(11,45,92,.08)}
+.oes-nav-wrap{height:78px;display:flex;align-items:center;gap:22px}
+.oes-brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#0A1B33;flex:0 0 auto}
+.oes-brand img{height:34px;width:auto;display:block}
+.oes-lockup{padding-left:14px;border-left:1px solid #CBD6E3;font-weight:700;font-size:.95rem;letter-spacing:-.01em}
+.oes-nav{display:flex;gap:20px;margin-left:auto;font-size:.9rem;font-weight:600}
+.oes-nav a{white-space:nowrap;color:#0A1B33;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.oes-nav a:hover{border-bottom-color:var(--oes-a)}
+.oes-contact{display:flex;align-items:center;gap:12px;padding-left:20px;border-left:1px solid #DCE5EF}
+.oes-phone{white-space:nowrap;display:flex;flex-direction:column;line-height:1.1;text-decoration:none;color:#0A1B33}
+.oes-phone small{font-size:.6rem;letter-spacing:.12em;color:#51627A;font-weight:700}.oes-phone strong{font-size:.95rem}
+.oes-start{display:inline-flex;align-items:center;padding:10px 16px;border-radius:12px;border:1.5px solid var(--oes-a);color:var(--oes-a)!important;font-weight:700;font-size:.85rem;text-decoration:none;background:#fff;white-space:nowrap}
+.oes-start:hover{background:var(--oes-a);color:#fff!important}
+.oes-login{display:inline-flex;align-items:center;padding:10px 16px;border-radius:999px;background:#fff;box-shadow:0 6px 18px rgba(10,27,51,.12);color:#0A1B33!important;font-weight:700;font-size:.85rem;text-decoration:none;white-space:nowrap}
+.oes-mobile{display:none;position:relative}
+.oes-mobile summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:4px;padding:8px 12px;border:1px solid #DCE5EF;border-radius:10px;background:#fff}
+.oes-mobile summary::-webkit-details-marker{display:none}.oes-mobile summary span{display:none}.oes-mobile summary b{font-size:.85rem}
+.oes-mobile-panel{position:absolute;right:0;top:calc(100% + 8px);width:min(320px,90vw);background:#fff;border:1px solid #DCE5EF;border-radius:14px;box-shadow:0 16px 40px rgba(10,27,51,.15);padding:14px;display:grid;gap:12px}
+.oes-mobile-panel h3{font-size:.7rem;letter-spacing:.14em;color:#51627A;margin:0 0 6px}.oes-mobile-panel a{display:block;padding:7px 0;color:#0A1B33;text-decoration:none;font-weight:600}
+@media (max-width:1280px){.oes-nav{display:none}.oes-contact{margin-left:auto}}
+@media (max-width:760px){.oes-contact{display:none}.oes-mobile{display:block;margin-left:auto}.oes-nav-wrap{height:64px}}
+/* Footer */
+.oes-footer{background:#F8FAFC;border-top:1px solid #DDE6F0;padding:48px 0 28px;color:#33465F}
+.oes-footer a{color:#0A1B33;text-decoration:none}.oes-footer a:hover{text-decoration:underline}
+.oes-follow{display:grid;grid-template-columns:minmax(220px,.8fr) 2.2fr;gap:28px;align-items:center;margin:0 0 40px;padding:24px 28px;border:1px solid #DCE5EF;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(10,27,51,.05)}
+.oes-kicker{font-size:.68rem;letter-spacing:.16em;color:var(--oes-a);font-weight:700}
+.oes-follow-head h2{margin:6px 0;font-size:1.45rem;color:#0A1B33;letter-spacing:-.02em}.oes-follow-head p{margin:0;font-size:.86rem;color:#51627A;line-height:1.5}
+.oes-follow-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.oes-follow-card{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:14px;border:1px solid #E3EAF3;border-radius:14px;background:#F8FAFC;min-width:0}
+.oes-follow-icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:#fff;background:#0A1B33}.oes-follow-icon svg{width:17px;height:17px;fill:currentColor}
+.is-linkedin .oes-follow-icon{background:#0A66C2}.is-instagram .oes-follow-icon{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)}.is-tiktok .oes-follow-icon{background:#111}.is-facebook .oes-follow-icon{background:#1877F2}.is-youtube .oes-follow-icon{background:#FF0000}
+.oes-follow-id{display:flex;flex-direction:column;min-width:0;line-height:1.25}.oes-follow-id strong{font-size:.85rem;color:#0A1B33}.oes-follow-id small{font-size:.74rem;color:#51627A;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.oes-follow-btn{margin-top:auto;display:inline-flex;padding:6px 14px;border-radius:999px;border:1px solid #0A1B33;font-size:.76rem;font-weight:700;text-decoration:none!important}.oes-follow-btn:hover{background:#0A1B33;color:#fff!important}
+.oes-main{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px}
+.oes-brand-col img{height:44px;width:auto}.oes-brand-col p{font-size:.9rem;line-height:1.55;margin:14px 0 0}
+.oes-col{display:flex;flex-direction:column;gap:9px}.oes-col h3{font-size:.72rem;letter-spacing:.14em;color:#0A1B33;margin:0 0 6px}.oes-col a{font-size:.9rem}
+.oes-signature{border-left:1px solid #DDE6F0;padding-left:24px}.oes-signature strong{display:block;font-size:1.35rem;line-height:1.15;color:#0A1B33}
+.oes-signature span{display:block;width:84px;height:3px;background:#E4572E;margin:12px 0;transform:rotate(-4deg)}.oes-signature p{font-size:.78rem;line-height:1.5;color:#51627A}
+.oes-trustrow{list-style:none;margin:28px 0 8px;padding:18px 0;border-top:1px solid #DDE6F0;border-bottom:1px solid #DDE6F0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.oes-trustrow li{min-width:0}.oes-trustrow a{display:flex;align-items:center;gap:10px;height:100%;min-height:64px;padding:8px 10px;border-radius:12px;background:#fff;border:1px solid #DCE5EF;text-decoration:none!important}
+.oes-trustrow a:hover{border-color:var(--oes-a)}
+.oes-badge{flex:0 0 44px;width:44px;height:44px;display:grid;place-items:center}.oes-badge img{max-width:44px;max-height:44px;object-fit:contain}
+.oes-badge b{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;background:#0A1B33;color:#fff;font-size:.7rem}
+.oes-badge-text{display:flex;flex-direction:column;line-height:1.2;min-width:0}.oes-badge-text strong{font-size:.78rem;color:#0A1B33}.oes-badge-text small{font-size:.7rem;color:#51627A}
+.oes-bottom{display:flex;flex-direction:column;gap:10px;padding-top:16px;font-size:.76rem;color:#51627A}.oes-bottom div{display:flex;flex-wrap:wrap;gap:6px 16px}.oes-bottom a{color:#51627A}
+@media (max-width:1100px){.oes-follow{grid-template-columns:1fr}.oes-follow-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.oes-main{grid-template-columns:1fr 1fr 1fr}.oes-brand-col{grid-column:1/-1}.oes-trustrow{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.oes-follow-cards,.oes-trustrow{grid-template-columns:repeat(2,minmax(0,1fr))}.oes-main{grid-template-columns:1fr}.oes-signature{border-left:0;padding-left:0}}
+/* Legacy estate bars/panels superseded by this shell */
+.orvia-estate-v1,.oes-footer [data-orvia-trust-panel],.oes-footer [data-orvia-legal-v1]{display:none!important}
